@@ -80,10 +80,10 @@ class StreetFighterSelectionTest {
 
         //Given
         String[] moves = new String[]{"up"};
-        startingPosition = new int[]{1, 0};
+        startingPosition = new int[]{1, 3};
 
         //When
-        String[] solution = new String[]{"Ryu"};
+        String[] solution = new String[]{"Guile"};
         String[] fighterSelection = new StreetFighterSelection(fighters, startingPosition, moves).ChooseCharacter();
 
 
@@ -150,6 +150,21 @@ class StreetFighterSelectionTest {
     }
 
     @Test
+    public void shouldUseAll4DirectionsClockwiseTwiceWithDifferentPosition() {
+
+        //Given
+        String[] moves = new String[]{"up", "left", "down", "right", "up", "left", "down", "right"};
+        startingPosition = new int[]{1, 4};
+
+        //When
+        String[] solution = new String[]{"Balrog", "Guile", "Dhalsim", "Sagat", "Balrog", "Guile", "Dhalsim", "Sagat"};
+        String[] fighterSelection = new StreetFighterSelection(fighters, startingPosition, moves).ChooseCharacter();
+
+        //Then
+        assertEquals(Arrays.asList(solution), Arrays.asList(fighterSelection));
+    }
+
+    @Test
     public void shouldWorkWhenAlwaysMovingDown() {
 
         //Given
@@ -177,4 +192,17 @@ class StreetFighterSelectionTest {
         assertEquals(Arrays.asList(solution), Arrays.asList(fighterSelection));
     }
 
+    @Test
+    public void shouldWorkWhenItsDifferentMoves() {
+
+        //Given
+        String[] moves = new String[]{"up", "qw", "up", "x"};
+
+        //When
+        String[] solution = new String[]{};
+        String[] fighterSelection = new StreetFighterSelection(fighters, startingPosition, moves).ChooseCharacter();
+
+        //Then
+        assertEquals(Arrays.asList(solution), Arrays.asList(fighterSelection));
+    }
 }

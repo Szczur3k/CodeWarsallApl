@@ -24,6 +24,12 @@ public class StreetFighterSelection {
 
         for (int i = 1; movesIndex < choosenCharacters.length; i++) {
 
+            if (!(moves[movesIndex].equals("down") ||
+                    moves[movesIndex].equals("up") ||
+                    moves[movesIndex].equals("left") ||
+                    moves[movesIndex].equals("right"))){
+                return new String[]{};
+            }
 
             if (moves[movesIndex].equals("left")) {
                 if (fighters[position[0]][position[1]].equals("Ryu") || fighters[position[0]][position[1]].equals("Ken")) {
@@ -61,7 +67,6 @@ public class StreetFighterSelection {
                     position = new int[]{position[0] - 1, position[1]};
                 }
             }
-
 
             if (moves[movesIndex].equals("down")) {
                 if (fighters[position[0]][position[1]].equals("Ken") ||

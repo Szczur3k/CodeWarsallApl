@@ -2,72 +2,85 @@ package StreetFightersSelection;
 
 public class StreetFighterSelection {
 
-    String[][] figters = new String[][]{
-            new String[]{"Ryu", "E.Honda", "Blanka", "Guile", "Balrog", "Vega"},
-            new String[]{"Ken", "Chun Li", "Zangief", "Dhalsim", "Sagat", "M.Bison"}};
-    int[] position = new int[]{0, 0};
-    String[] moves = new String[]{"up", "left", "right", "left", "left"};
-
-    public StreetFighterSelection() {
-    }
-
-    ;
+    String[][] fighters;
+    int[] position;
+    String[] moves;
 
     public StreetFighterSelection(String[][] fighters, int[] position, String[] moves) {
-        this.figters = fighters;
+        this.fighters = fighters;
         this.position = position;
         this.moves = moves;
     }
 
     public String[] ChooseCharacter() {
 
-        String[] choosenCharacters = new String[moves.length];
-        //It's starting with -1 because String[] moves start in 0
-        int elementOfArrayMoves = -1;
-
         if (moves.length == 0) {
             return new String[]{};
         }
 
-        while (moves.length != 0) {
+        String startingPosition = fighters[position[0]][position[1]];
+        String[] choosenCharacters = new String[moves.length];
+        int movesIndex = 0;
 
-            for (String move : moves) {
-                elementOfArrayMoves++;
+        for (int i = 1; movesIndex < choosenCharacters.length; i++) {
 
-                if (move.equals("left")) {
-                    //jesli element 0 -> przejdz do ostatniego
-                    //jesli element 1+ -> przejdz array w lewo
 
+            if (moves[movesIndex].equals("left")) {
+                if (fighters[position[0]][position[1]].equals("Ryu") || fighters[position[0]][position[1]].equals("Ken")) {
+                    choosenCharacters[movesIndex] = fighters[position[0]][5];
+                    position = new int[]{position[0], 5};
+                } else {
+                    choosenCharacters[movesIndex] = fighters[position[0]][position[1] - 1];
+                    position = new int[]{position[0], position[1] - 1};
                 }
-                if (move.equals("right")) {
-                    //jesli element 5 -> przejdz do pierwszego
-                    //jesli element 4- -> przejdz array w prawo
-                }
-                if (move.equals("up")) {
-                    //jesli gorna linijka zostan
-                    //jesli dolna linijka przejdz do gory
-                }
-                if (move.equals("down")) {
-                    //jestli gorna linijka przejdz na dol
-                    //jesli dolna linijka zostan
-                }
-
-                //then delate the array[move]
-                //do first array[0]
-                //adding fighter to String[] choosenCharacter
-                //repeat until moves.equals(0)
             }
+
+
+            if (moves[movesIndex].equals("right")) {
+                if (fighters[position[0]][position[1]].equals("Vega") || fighters[position[0]][position[1]].equals("M.Bison")) {
+                    choosenCharacters[movesIndex] = fighters[position[0]][0];
+                    position = new int[]{position[0], 0};
+                } else {
+                    choosenCharacters[movesIndex] = fighters[position[0]][position[1] + 1];
+                    position = new int[]{position[0], position[1] + 1};
+                }
+            }
+
+
+            if (moves[movesIndex].equals("up")) {
+                if (fighters[position[0]][position[1]].equals("Ryu") ||
+                        fighters[position[0]][position[1]].equals("E.Honda") ||
+                        fighters[position[0]][position[1]].equals("Blanka") ||
+                        fighters[position[0]][position[1]].equals("Guile") ||
+                        fighters[position[0]][position[1]].equals("Balrog") ||
+                        fighters[position[0]][position[1]].equals("Vega")) {
+                    choosenCharacters[movesIndex] = fighters[0][position[1]];
+                    position = new int[]{0, position[0]};
+                } else {
+                    choosenCharacters[movesIndex] = fighters[position[0] - 1][position[1]];
+                    position = new int[]{position[0] - 1, position[1]};
+                }
+            }
+
+
+            if (moves[movesIndex].equals("down")) {
+                if (fighters[position[0]][position[1]].equals("Ken") ||
+                        fighters[position[0]][position[1]].equals("Chun Li") ||
+                        fighters[position[0]][position[1]].equals("Zangief") ||
+                        fighters[position[0]][position[1]].equals("Dhalsim") ||
+                        fighters[position[0]][position[1]].equals("Sagat") ||
+                        fighters[position[0]][position[1]].equals("M.Bison")) {
+                    choosenCharacters[movesIndex] = fighters[1][position[1]];
+                    position = new int[]{1, position[1]};
+                } else {
+                    choosenCharacters[movesIndex] = fighters[position[0] + 1][position[1]];
+                    position = new int[]{position[0] + 1, position[1]};
+                }
+            }
+
+            movesIndex++;
         }
-
-
-        return new String[]{"Ryu"};
+        return choosenCharacters;
     }
-
-    private String[][] positionChange(String move) {
-        return new String[][]{{"X"}, {"D"}};
-
-    }
-
-
 }
 

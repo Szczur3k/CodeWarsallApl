@@ -31,6 +31,68 @@ class StreetFighterSelectionTest {
     }
 
     @Test
+    public void shouldWorkWithOneRight() {
+
+        //Given
+        String[] moves = new String[]{"right"};
+
+        //When
+        String[] solution = new String[]{"E.Honda"};
+        String[] fighterSelection = new StreetFighterSelection(fighters, startingPosition, moves).ChooseCharacter();
+
+
+        //Then
+        assertEquals(Arrays.asList(solution), Arrays.asList(fighterSelection));
+    }
+
+    @Test
+    public void shouldWorkWithOneLeft() {
+
+        //Given
+        String[] moves = new String[]{"left"};
+
+        //When
+        String[] solution = new String[]{"Vega"};
+        String[] fighterSelection = new StreetFighterSelection(fighters, startingPosition, moves).ChooseCharacter();
+
+
+        //Then
+        assertEquals(Arrays.asList(solution), Arrays.asList(fighterSelection));
+    }
+
+    @Test
+    public void shouldWorkWithOneUp() {
+
+        //Given
+        String[] moves = new String[]{"up"};
+
+        //When
+        String[] solution = new String[]{"Ryu"};
+        String[] fighterSelection = new StreetFighterSelection(fighters, startingPosition, moves).ChooseCharacter();
+
+
+        //Then
+        assertEquals(Arrays.asList(solution), Arrays.asList(fighterSelection));
+    }
+
+    @Test
+    public void shouldWorkWithOneUpWithDifferentStartingPosition() {
+
+        //Given
+        String[] moves = new String[]{"up"};
+        startingPosition = new int[]{1, 0};
+
+        //When
+        String[] solution = new String[]{"Ryu"};
+        String[] fighterSelection = new StreetFighterSelection(fighters, startingPosition, moves).ChooseCharacter();
+
+
+        //Then
+        assertEquals(Arrays.asList(solution), Arrays.asList(fighterSelection));
+    }
+
+
+    @Test
     public void shouldWorkWithFewMoves() {
 
         //Given

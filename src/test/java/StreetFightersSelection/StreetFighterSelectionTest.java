@@ -91,6 +91,21 @@ class StreetFighterSelectionTest {
         assertEquals(Arrays.asList(solution), Arrays.asList(fighterSelection));
     }
 
+    @Test
+    public void shouldWorkWithOneLeftWithDifferentStartingPosition() {
+
+        //Given
+        String[] moves = new String[]{"left"};
+        startingPosition = new int[]{1, 4};
+
+        //When
+        String[] solution = new String[]{"Dhalsim"};
+        String[] fighterSelection = new StreetFighterSelection(fighters, startingPosition, moves).ChooseCharacter();
+
+
+        //Then
+        assertEquals(Arrays.asList(solution), Arrays.asList(fighterSelection));
+    }
 
     @Test
     public void shouldWorkWithFewMoves() {
@@ -129,6 +144,20 @@ class StreetFighterSelectionTest {
 
         //When
         String[] solution = new String[]{"E.Honda", "Blanka", "Guile", "Balrog", "Vega", "Ryu", "E.Honda", "Blanka"};
+        String[] fighterSelection = new StreetFighterSelection(fighters, startingPosition, moves).ChooseCharacter();
+
+        //Then
+        assertEquals(Arrays.asList(solution), Arrays.asList(fighterSelection));
+    }
+
+    @Test
+    public void shouldWorkWhenMovingRightAndLeftOnly() {
+
+        //Given
+        String[] moves = new String[]{"right", "left", "right", "left", "right", "left", "right", "left", "right", "left", "right", "left", "right", "left", "right", "left"};
+
+        //When
+        String[] solution = new String[]{"E.Honda", "Ryu", "E.Honda", "Ryu", "E.Honda", "Ryu", "E.Honda", "Ryu", "E.Honda", "Ryu", "E.Honda", "Ryu", "E.Honda", "Ryu", "E.Honda", "Ryu"};
         String[] fighterSelection = new StreetFighterSelection(fighters, startingPosition, moves).ChooseCharacter();
 
         //Then
@@ -199,10 +228,38 @@ class StreetFighterSelectionTest {
         String[] moves = new String[]{"up", "qw", "up", "x"};
 
         //When
-        String[] solution = new String[]{};
+        List<Object> solution = Collections.emptyList();
         String[] fighterSelection = new StreetFighterSelection(fighters, startingPosition, moves).ChooseCharacter();
 
         //Then
-        assertEquals(Arrays.asList(solution), Arrays.asList(fighterSelection));
+        assertEquals(solution, Arrays.asList(fighterSelection));
+    }
+
+    @Test
+    public void shouldWorkWhenItsDifferentMovesButNamedCharacters() {
+
+        //Given
+        String[] moves = new String[]{"Vega", "Balrog", "Ken", "Ryu"};
+
+        //When
+        List<Object> solution = Collections.emptyList();
+        String[] fighterSelection = new StreetFighterSelection(fighters, startingPosition, moves).ChooseCharacter();
+
+        //Then
+        assertEquals(solution, Arrays.asList(fighterSelection));
+    }
+
+    @Test
+    public void shouldWorkWhenItsDifferentMovesAndSomeEmpty() {
+
+        //Given
+        String[] moves = new String[]{"Vega", "Balrog", " ", "ss", "Ken", "Ryu"};
+
+        //When
+        List<Object> solution = Collections.emptyList();
+        String[] fighterSelection = new StreetFighterSelection(fighters, startingPosition, moves).ChooseCharacter();
+
+        //Then
+        assertEquals(solution, Arrays.asList(fighterSelection));
     }
 }

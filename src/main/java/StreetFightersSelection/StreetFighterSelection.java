@@ -1,6 +1,10 @@
 package StreetFightersSelection;
 
+import java.util.logging.Logger;
+
 public class StreetFighterSelection {
+
+    private final static Logger LOGGER = Logger.getGlobal();
 
     String[][] fighters;
     int[] position;
@@ -18,7 +22,6 @@ public class StreetFighterSelection {
             return new String[]{};
         }
 
-        String startingPosition = fighters[position[0]][position[1]];
         String[] choosenCharacters = new String[moves.length];
         int movesIndex = 0;
 
@@ -27,7 +30,7 @@ public class StreetFighterSelection {
             if (!(moves[movesIndex].equals("down") ||
                     moves[movesIndex].equals("up") ||
                     moves[movesIndex].equals("left") ||
-                    moves[movesIndex].equals("right"))){
+                    moves[movesIndex].equals("right"))) {
                 return new String[]{};
             }
 
@@ -41,7 +44,6 @@ public class StreetFighterSelection {
                 }
             }
 
-
             if (moves[movesIndex].equals("right")) {
                 if (fighters[position[0]][position[1]].equals("Vega") || fighters[position[0]][position[1]].equals("M.Bison")) {
                     choosenCharacters[movesIndex] = fighters[position[0]][0];
@@ -52,14 +54,8 @@ public class StreetFighterSelection {
                 }
             }
 
-
             if (moves[movesIndex].equals("up")) {
-                if (fighters[position[0]][position[1]].equals("Ryu") ||
-                        fighters[position[0]][position[1]].equals("E.Honda") ||
-                        fighters[position[0]][position[1]].equals("Blanka") ||
-                        fighters[position[0]][position[1]].equals("Guile") ||
-                        fighters[position[0]][position[1]].equals("Balrog") ||
-                        fighters[position[0]][position[1]].equals("Vega")) {
+                if (isFightersOnTopOrDown("Ryu", "E.Honda", "Blanka", "Guile", "Balrog", "Vega")) {
                     choosenCharacters[movesIndex] = fighters[0][position[1]];
                     position = new int[]{0, position[0]};
                 } else {
@@ -69,12 +65,7 @@ public class StreetFighterSelection {
             }
 
             if (moves[movesIndex].equals("down")) {
-                if (fighters[position[0]][position[1]].equals("Ken") ||
-                        fighters[position[0]][position[1]].equals("Chun Li") ||
-                        fighters[position[0]][position[1]].equals("Zangief") ||
-                        fighters[position[0]][position[1]].equals("Dhalsim") ||
-                        fighters[position[0]][position[1]].equals("Sagat") ||
-                        fighters[position[0]][position[1]].equals("M.Bison")) {
+                if (isFightersOnTopOrDown("Ken", "Chun Li", "Zangief", "Dhalsim", "Sagat", "M.Bison")) {
                     choosenCharacters[movesIndex] = fighters[1][position[1]];
                     position = new int[]{1, position[1]};
                 } else {
@@ -87,5 +78,13 @@ public class StreetFighterSelection {
         }
         return choosenCharacters;
     }
-}
 
+    private boolean isFightersOnTopOrDown(String fighter1, String fighter2, String fighter3, String fighter4, String fighter5, String fighter6) {
+        return fighters[position[0]][position[1]].equals(fighter1) ||
+                fighters[position[0]][position[1]].equals(fighter2) ||
+                fighters[position[0]][position[1]].equals(fighter3) ||
+                fighters[position[0]][position[1]].equals(fighter4) ||
+                fighters[position[0]][position[1]].equals(fighter5) ||
+                fighters[position[0]][position[1]].equals(fighter6);
+    }
+}

@@ -23,7 +23,7 @@ I will try to write 200 challanges in 3 months (from 22.03.2021 to 30.06.2021)
 10. Validate Credit Card Number - checking if card is validate by Luhn algorithm </br> 
 
 
-![Validate Credit Card Number](src/main/resources/ValidateCreditCardNumber.png?raw=true){:height="50%" width="50%"}
+![Validate Credit Card Number](src/main/resources/ValidateCreditCardNumber.png?raw=true&s=200)
 
 11. Duplicate Count - counting duplicate strings. If string appear more than two times its counting like one.
     

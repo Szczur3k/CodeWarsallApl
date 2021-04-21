@@ -21,7 +21,8 @@ I will try to write 200 challanges in 3 months (from 22.03.2021 to 30.06.2021)
 8. Find The Odd Int - return int that appears an odd number of times</br>
 9. The Office III Broken Photocopier - change all "0" to "1" and "1" to "0" in given String</br>
 10. Validate Credit Card Number - checking if card is validate by Luhn algorithm </br> 
-![Alt text](src/main/resources/ValidateCreditCardNumber.png?raw=true "Title")
+11. 
+![some text](https://images.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.fightersgeneration.com%2Fnp5%2Fgm%2Fsf2ce-s2.jpg&f=1)
 
 
 

@@ -26,6 +26,7 @@ I will try to write 200 challanges in 3 months (from 22.03.2021 to 30.06.2021)
 
 11. Duplicate Count - counting duplicate strings. If string appear more than two times its counting like one.
     
+
 <h3>Application in progress:</h3>
 1. StreetFighterSelection - changing figter position from given movegs and position
 

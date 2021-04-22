@@ -22,11 +22,11 @@ I will try to write 200 challanges in 3 months (from 22.03.2021 to 30.06.2021)
 9. The Office III Broken Photocopier - change all "0" to "1" and "1" to "0" in given String</br>
 10. Validate Credit Card Number - checking if card is validate by Luhn algorithm </br> 
 
-
 ![Validate Credit Card Number](src/main/resources/ValidateCreditCardNumber.png?raw=true&s=10)
 
-11. Duplicate Count - counting duplicate strings. If string appear more than two times its counting like one.
-    
+11. Duplicate Count - counting duplicate strings. If string appear more than two times its counting like one </br>
+12. Scrambles - checking if from first given string is possible to get second given string </br>
+13. Number Fun - get next square number after given </br>
 
 <h3>Application in progress:</h3>
 1. StreetFighterSelection - changing figter position from given movegs and position

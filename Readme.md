@@ -20,7 +20,7 @@ I will try to write 200 challanges in 3 months (from 22.03.2021 to 30.06.2021)
 7. Highest Scoring Word (6kyu) - return word with highest points (a=1, b=2, c=3 etc.) from given sentence</br>
 8. Find The Odd Int (6kyu) - return int that appears an odd number of times</br>
 9. The Office III Broken Photocopier (7kyu) - change all "0" to "1" and "1" to "0" in given String</br>
-10. Validate Credit Card Number (6kyu) - checking if card is validate by Luhn algorithm </br></br>
+10. Validate Credit Card Number (6kyu) - checking if card is validate by Luhn algorithm </br>
 
 ![Validate Credit Card Number](src/main/resources/ValidateCreditCardNumber.png?raw=true&s=10)
 
@@ -28,8 +28,15 @@ I will try to write 200 challanges in 3 months (from 22.03.2021 to 30.06.2021)
 12. Scrambles (5kyu) - checking if from first given string is possible to get second given string </br>
 13. Number Fun (7kyu) - get next square number after given </br>
 14. The Super Market Queue (6kyu) - write a function to calculate the total time required for all the customers to check out </br>
+15. Salesman Travel (6kyu) - write a function that gives you streets and numbers of street by zipcode </br>
+
+![Salesman Travel](src/main/resources/Salesman.png)
 
 <h3>Application in progress:</h3>
-1. StreetFighterSelection (6kyu) - changing figter position from given movegs and position
-
+1. StreetFighterSelection (6kyu) - changing figter position from given movegs and position </br>
+   
 ![Street Fighter Selection](https://images.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.fightersgeneration.com%2Fnp5%2Fgm%2Fsf2ce-s2.jpg&f=1)
+   
+2  PosAndPeaks (5kyu) - write a function that returns the positions and the values of the "peaks" (or local maxima) of a numeric array </br>
+
+![Pos And Peaks](src/main/resources/PickPeaks.png)

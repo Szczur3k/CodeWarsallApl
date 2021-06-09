@@ -8,4 +8,14 @@ public class childGiraffe extends Zyrafa {
         super(age, cage);
         this.nameOfChildGiraffe = nameOfChildGiraffe;
     }
+
+    @Override
+    public String somethingToDo() {
+        return super.somethingToDo();
+    }
+
+    @Override
+    public String eat() {
+        return "Eating leaf";
+    }
 }

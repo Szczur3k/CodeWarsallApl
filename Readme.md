@@ -15,7 +15,8 @@ I will try to write 200 challenges (from 22.03.2021 to X)
 <h3>Application pasted:</h3>
 1. Triangle (7kyu) - checking if from given parameters can be build triangle
    
-2. Vowels (7kyu) - counting vowels from given sentence</br>
+2. Vowels (7kyu) - counting vowels from given sentence
+   
 3. SpinWords (6kyu) - reverse word in sentence if length of the word is more than 5</br>
 4. Positive (7kyu) - sum all numbers greater than 0</br>
 5. Easy Wallpaper (7kyu) - return needed roll of wallpaper</br>

@@ -6,7 +6,9 @@ it's an app where I try code chalange from CodeWars.com
 
 ---
 All the challenges have unit based on difficulty.
+
 8 kyu is the easiest ones.
+
 1 kyu is the hardest ones.
 
 I will try to write 200 challenges (from 22.03.2021 to X)

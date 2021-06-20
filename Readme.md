@@ -5,17 +5,16 @@
 it's an app where I try code chalange from CodeWars.com
 
 ---
-All the challenges have unit based on difficulty.
-
-8 kyu is the easiest ones.
-
+All the challenges have unit based on difficulty.<br>
+8 kyu is the easiest ones.<br>
 1 kyu is the hardest ones.
 
 I will try to write 200 challenges (from 22.03.2021 to X)
 
 ---
 <h3>Application pasted:</h3>
-1. Triangle (7kyu) - checking if from given parameters can be build triangle</br>
+1. Triangle (7kyu) - checking if from given parameters can be build triangle
+   
 2. Vowels (7kyu) - counting vowels from given sentence</br>
 3. SpinWords (6kyu) - reverse word in sentence if length of the word is more than 5</br>
 4. Positive (7kyu) - sum all numbers greater than 0</br>

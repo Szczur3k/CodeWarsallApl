@@ -17,14 +17,21 @@ I will try to write 200 challenges (from 22.03.2021 to X)
    
 2. Vowels (7kyu) - counting vowels from given sentence
    
-3. SpinWords (6kyu) - reverse word in sentence if length of the word is more than 5</br>
-4. Positive (7kyu) - sum all numbers greater than 0</br>
-5. Easy Wallpaper (7kyu) - return needed roll of wallpaper</br>
-6. Break CamelCase (6kyu) - breaking sentence if is </br>
-7. Highest Scoring Word (6kyu) - return word with highest points (a=1, b=2, c=3 etc.) from given sentence</br>
-8. Find The Odd Int (6kyu) - return int that appears an odd number of times</br>
-9. The Office III Broken Photocopier (7kyu) - change all "0" to "1" and "1" to "0" in given String</br>
-10. Validate Credit Card Number (6kyu) - checking if card is validate by Luhn algorithm </br>
+3. SpinWords (6kyu) - reverse word in sentence if length of the word is more than 5
+   
+4. Positive (7kyu) - sum all numbers greater than 0
+   
+5. Easy Wallpaper (7kyu) - return needed roll of wallpaper
+
+6. Break CamelCase (6kyu) - breaking sentence if is Upper case
+
+7. Highest Scoring Word (6kyu) - return word with highest points (a=1, b=2, c=3 etc.) from given sentence
+
+8. Find The Odd Int (6kyu) - return int that appears an odd number of times
+
+9. The Office III Broken Photocopier (7kyu) - change all "0" to "1" and "1" to "0" in given String
+
+10. Validate Credit Card Number (6kyu) - checking if card is validate by Luhn algorithm
 
 ![Validate Credit Card Number](src/main/resources/ValidateCreditCardNumber.png?raw=true&s=10)
 

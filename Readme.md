@@ -13,6 +13,7 @@ I will try to write 200 challenges (from 22.03.2021 to X)
 
 ---
 <h3>Application pasted:</h3>
+
 1. Triangle (7kyu) - checking if from given parameters can be build triangle
    
 2. Vowels (7kyu) - counting vowels from given sentence
@@ -35,20 +36,25 @@ I will try to write 200 challenges (from 22.03.2021 to X)
 
 ![Validate Credit Card Number](src/main/resources/ValidateCreditCardNumber.png?raw=true&s=10)
 
-11. Duplicate Count (6kyu) - counting duplicate strings. If string appear more than two times its counting like one </br>
-12. Scrambles (5kyu) - checking if from first given string is possible to get second given string </br>
-13. Number Fun (7kyu) - get next square number after given </br>
-14. The Super Market Queue (6kyu) - write a function to calculate the total time required for all the customers to check out </br>
-15. Salesman Travel (6kyu) - write a function that gives you streets and numbers of street by zipcode </br>
+11. Duplicate Count (6kyu) - counting duplicate strings. If string appear more than two times its counting like one
+
+12. Scrambles (5kyu) - checking if from first given string is possible to get second given string
+
+13. Number Fun (7kyu) - get next square number after given
+
+14. The Super Market Queue (6kyu) - write a function to calculate the total time required for all the customers to check out
+
+15. Salesman Travel (6kyu) - write a function that gives you streets and numbers of street by zipcode
 
 ![Salesman Travel](src/main/resources/Salesman.png)
 
-16. StreetFighterSelection (6kyu) - changing figter position from given movegs and position </br>
+16. StreetFighterSelection (6kyu) - changing figter position from given movegs and position
 
 ![Street Fighter Selection](https://images.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.fightersgeneration.com%2Fnp5%2Fgm%2Fsf2ce-s2.jpg&f=1)
 
 
 <h3>Application in progress:</h3>
-1.  PosAndPeaks (5kyu) - write a function that returns the positions and the values of the "peaks" (or local maxima) of a numeric array </br>
+
+1.  PosAndPeaks (5kyu) - write a function that returns the positions and the values of the "peaks" (or local maxima) of a numeric array
 
 ![Pos And Peaks](src/main/resources/PickPeaks.png)

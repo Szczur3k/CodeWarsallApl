@@ -24,7 +24,7 @@ class StreetFighterSelectionTest {
 
         //When
         List<Object> solution = Collections.emptyList();
-        String[] fighterSelection = new StreetFighterSelection(fighters, startingPosition, noMoves).ChooseCharacter();
+        String[] fighterSelection = StreetFighterSelection.streetFighterSelection(fighters, startingPosition, noMoves);
 
         //Then
         assertEquals(solution, Arrays.asList(fighterSelection));
@@ -38,7 +38,7 @@ class StreetFighterSelectionTest {
 
         //When
         String[] solution = new String[]{"E.Honda"};
-        String[] fighterSelection = new StreetFighterSelection(fighters, startingPosition, moves).ChooseCharacter();
+        String[] fighterSelection = StreetFighterSelection.streetFighterSelection(fighters, startingPosition, moves);
 
 
         //Then
@@ -53,7 +53,7 @@ class StreetFighterSelectionTest {
 
         //When
         String[] solution = new String[]{"Vega"};
-        String[] fighterSelection = new StreetFighterSelection(fighters, startingPosition, moves).ChooseCharacter();
+        String[] fighterSelection = StreetFighterSelection.streetFighterSelection(fighters, startingPosition, moves);
 
 
         //Then
@@ -68,7 +68,7 @@ class StreetFighterSelectionTest {
 
         //When
         String[] solution = new String[]{"Ryu"};
-        String[] fighterSelection = new StreetFighterSelection(fighters, startingPosition, moves).ChooseCharacter();
+        String[] fighterSelection = StreetFighterSelection.streetFighterSelection(fighters, startingPosition, moves);
 
 
         //Then
@@ -84,7 +84,7 @@ class StreetFighterSelectionTest {
 
         //When
         String[] solution = new String[]{"Guile"};
-        String[] fighterSelection = new StreetFighterSelection(fighters, startingPosition, moves).ChooseCharacter();
+        String[] fighterSelection = StreetFighterSelection.streetFighterSelection(fighters, startingPosition, moves);
 
 
         //Then
@@ -100,7 +100,7 @@ class StreetFighterSelectionTest {
 
         //When
         String[] solution = new String[]{"Dhalsim"};
-        String[] fighterSelection = new StreetFighterSelection(fighters, startingPosition, moves).ChooseCharacter();
+        String[] fighterSelection = StreetFighterSelection.streetFighterSelection(fighters, startingPosition, moves);
 
 
         //Then
@@ -115,7 +115,7 @@ class StreetFighterSelectionTest {
 
         //When
         String[] solution = new String[]{"Ryu", "Vega", "Ryu", "Vega", "Balrog"};
-        String[] fighterSelection = new StreetFighterSelection(fighters, startingPosition, moves).ChooseCharacter();
+        String[] fighterSelection = StreetFighterSelection.streetFighterSelection(fighters, startingPosition, moves);
 
         //Then
         assertEquals(Arrays.asList(solution), Arrays.asList(fighterSelection));
@@ -129,7 +129,7 @@ class StreetFighterSelectionTest {
 
         //When
         String[] solution = new String[]{"Vega", "Balrog", "Guile", "Blanka", "E.Honda", "Ryu", "Vega", "Balrog"};
-        String[] fighterSelection = new StreetFighterSelection(fighters, startingPosition, moves).ChooseCharacter();
+        String[] fighterSelection = StreetFighterSelection.streetFighterSelection(fighters, startingPosition, moves);
 
 
         //Then
@@ -144,7 +144,7 @@ class StreetFighterSelectionTest {
 
         //When
         String[] solution = new String[]{"E.Honda", "Blanka", "Guile", "Balrog", "Vega", "Ryu", "E.Honda", "Blanka"};
-        String[] fighterSelection = new StreetFighterSelection(fighters, startingPosition, moves).ChooseCharacter();
+        String[] fighterSelection = StreetFighterSelection.streetFighterSelection(fighters, startingPosition, moves);
 
         //Then
         assertEquals(Arrays.asList(solution), Arrays.asList(fighterSelection));
@@ -158,7 +158,7 @@ class StreetFighterSelectionTest {
 
         //When
         String[] solution = new String[]{"E.Honda", "Ryu", "E.Honda", "Ryu", "E.Honda", "Ryu", "E.Honda", "Ryu", "E.Honda", "Ryu", "E.Honda", "Ryu", "E.Honda", "Ryu", "E.Honda", "Ryu"};
-        String[] fighterSelection = new StreetFighterSelection(fighters, startingPosition, moves).ChooseCharacter();
+        String[] fighterSelection = StreetFighterSelection.streetFighterSelection(fighters, startingPosition, moves);
 
         //Then
         assertEquals(Arrays.asList(solution), Arrays.asList(fighterSelection));
@@ -172,7 +172,7 @@ class StreetFighterSelectionTest {
 
         //When
         String[] solution = new String[]{"Ryu", "Vega", "M.Bison", "Ken", "Ryu", "Vega", "M.Bison", "Ken"};
-        String[] fighterSelection = new StreetFighterSelection(fighters, startingPosition, moves).ChooseCharacter();
+        String[] fighterSelection = StreetFighterSelection.streetFighterSelection(fighters, startingPosition, moves);
 
         //Then
         assertEquals(Arrays.asList(solution), Arrays.asList(fighterSelection));
@@ -187,7 +187,7 @@ class StreetFighterSelectionTest {
 
         //When
         String[] solution = new String[]{"Balrog", "Guile", "Dhalsim", "Sagat", "Balrog", "Guile", "Dhalsim", "Sagat"};
-        String[] fighterSelection = new StreetFighterSelection(fighters, startingPosition, moves).ChooseCharacter();
+        String[] fighterSelection = StreetFighterSelection.streetFighterSelection(fighters, startingPosition, moves);
 
         //Then
         assertEquals(Arrays.asList(solution), Arrays.asList(fighterSelection));
@@ -201,7 +201,7 @@ class StreetFighterSelectionTest {
 
         //When
         String[] solution = new String[]{"Ken", "Ken", "Ken", "Ken"};
-        String[] fighterSelection = new StreetFighterSelection(fighters, startingPosition, moves).ChooseCharacter();
+        String[] fighterSelection = StreetFighterSelection.streetFighterSelection(fighters, startingPosition, moves);
 
         //Then
         assertEquals(Arrays.asList(solution), Arrays.asList(fighterSelection));
@@ -215,7 +215,7 @@ class StreetFighterSelectionTest {
 
         //When
         String[] solution = new String[]{"Ryu", "Ryu", "Ryu", "Ryu"};
-        String[] fighterSelection = new StreetFighterSelection(fighters, startingPosition, moves).ChooseCharacter();
+        String[] fighterSelection = StreetFighterSelection.streetFighterSelection(fighters, startingPosition, moves);
 
         //Then
         assertEquals(Arrays.asList(solution), Arrays.asList(fighterSelection));
@@ -229,7 +229,7 @@ class StreetFighterSelectionTest {
 
         //When
         List<Object> solution = Collections.emptyList();
-        String[] fighterSelection = new StreetFighterSelection(fighters, startingPosition, moves).ChooseCharacter();
+        String[] fighterSelection = StreetFighterSelection.streetFighterSelection(fighters, startingPosition, moves);
 
         //Then
         assertEquals(solution, Arrays.asList(fighterSelection));
@@ -243,7 +243,7 @@ class StreetFighterSelectionTest {
 
         //When
         List<Object> solution = Collections.emptyList();
-        String[] fighterSelection = new StreetFighterSelection(fighters, startingPosition, moves).ChooseCharacter();
+        String[] fighterSelection = StreetFighterSelection.streetFighterSelection(fighters, startingPosition, moves);
 
         //Then
         assertEquals(solution, Arrays.asList(fighterSelection));
@@ -257,7 +257,7 @@ class StreetFighterSelectionTest {
 
         //When
         List<Object> solution = Collections.emptyList();
-        String[] fighterSelection = new StreetFighterSelection(fighters, startingPosition, moves).ChooseCharacter();
+        String[] fighterSelection = StreetFighterSelection.streetFighterSelection(fighters, startingPosition, moves);
 
         //Then
         assertEquals(solution, Arrays.asList(fighterSelection));

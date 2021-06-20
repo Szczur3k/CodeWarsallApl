@@ -1,6 +1,6 @@
 package RecruitmentTasks.Zoo;
 
-public class Zyrafa implements Animal{
+public class Zyrafa implements Animal {
 
     final private String name = "Girrafe";
     int age;
@@ -21,7 +21,8 @@ public class Zyrafa implements Animal{
         return eat();
     }
 
-    public String eat(){
+    public String eat() {
         return "Girrafe is eating right now";
     }
+
 }

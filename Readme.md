@@ -5,9 +5,11 @@
 it's an app where I try code chalange from CodeWars.com
 
 ---
-All of the challanges have unit
+All the challenges have unit based on difficulty.
+8 kyu is the easiest ones.
+1 kyu is the hardest ones.
 
-I will try to write 200 challanges in 3 months (from 22.03.2021 to 30.06.2021)
+I will try to write 200 challenges (from 22.03.2021 to X)
 
 ---
 <h3>Application pasted:</h3>
@@ -32,11 +34,12 @@ I will try to write 200 challanges in 3 months (from 22.03.2021 to 30.06.2021)
 
 ![Salesman Travel](src/main/resources/Salesman.png)
 
-<h3>Application in progress:</h3>
-1. StreetFighterSelection (6kyu) - changing figter position from given movegs and position </br>
-   
+16. StreetFighterSelection (6kyu) - changing figter position from given movegs and position </br>
+
 ![Street Fighter Selection](https://images.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.fightersgeneration.com%2Fnp5%2Fgm%2Fsf2ce-s2.jpg&f=1)
-   
-2  PosAndPeaks (5kyu) - write a function that returns the positions and the values of the "peaks" (or local maxima) of a numeric array </br>
+
+
+<h3>Application in progress:</h3>
+1.  PosAndPeaks (5kyu) - write a function that returns the positions and the values of the "peaks" (or local maxima) of a numeric array </br>
 
 ![Pos And Peaks](src/main/resources/PickPeaks.png)

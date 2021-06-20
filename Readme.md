@@ -52,6 +52,7 @@ I will try to write 200 challenges (from 22.03.2021 to X)
 
 ![Street Fighter Selection](https://images.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.fightersgeneration.com%2Fnp5%2Fgm%2Fsf2ce-s2.jpg&f=1)
 
+17. Sum of Intervals (4kyu) - accepts an array of intervals, and returns the sum of all the interval lengths.
 
 <h3>Application in progress:</h3>
 

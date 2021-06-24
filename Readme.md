@@ -54,6 +54,10 @@ I will try to write 200 challenges (from 22.03.2021 to X)
 
 17. Sum of Intervals (4kyu) - accepts an array of intervals, and returns the sum of all the interval lengths.
 
+18. Simple Pig Latin (5kyu) - change first letter of each String and take it to the end with "ay". Punctuations should be intact.
+
+19. ReverseWords (8kyu) - change the direction of String.
+
 <h3>Application in progress:</h3>
 
 1.  PosAndPeaks (5kyu) - write a function that returns the positions and the values of the "peaks" (or local maxima) of a numeric array
